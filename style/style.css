@@ -1,0 +1,421 @@
+*{
+    margin:0;
+    padding:0;  
+}
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url(../images/background/pexels-photo-2010503.jpeg);
+    background-size: 100%;
+    background-repeat: repeat;
+    overflow-y: scroll;
+    overflow-x: scroll;
+} /*стили фона сайта*/
+header{
+    display: block;
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    z-index:100;
+    box-shadow: 0 -1px 2px #111111;
+}/*стили хедера*/
+.logo{
+    animation: pulsing 2s infinite;
+    display: inline-block;
+}
+span{
+    font-family: 'Permanent Marker', cursive, sans-serif;
+      color: aliceblue;
+}
+.name{
+    font-size: 36px;
+    font-style: italic;
+}/* Название сайта*/
+/* Навигация по сайту */
+.mainmenu{
+    margin-left: 380px;
+    display: inline-block;
+}
+.navigation{
+max-width: 380px;
+margin: 0 auto;
+display: inline-block;
+}
+ul {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display:block;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(8, 8, 8);
+    background-color: rgb(231, 231, 231);
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-bottom: #111111;
+    border-radius: 25px 25px;
+}
+ul.menu > li > a:hover {
+    opacity: 1;
+    background-color: rgb(184, 192, 226);
+    animation: moveFromBottom 300ms ease-in-out;
+    transition: 2s linear;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 46px;
+    left: -50px;
+    border-bottom: #111111;
+}
+ul.submenu > li {
+    display: block;
+    width: 180px;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: rgb(8, 8, 8);
+    background-color: rgb(231, 231, 231);
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-bottom: #111111;
+    border-radius: 25px 25px;
+}
+ul.submenu > li > a:hover {
+    transition: 2s linear;
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.hello{
+    width: 100%;
+    min-height: 50px;
+    max-height: auto;
+    background-color: black;
+}
+#hello_zoo{
+    color: aliceblue;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+ }  
+ /* heder*/ 
+
+
+/* content */
+ main{
+    padding: 2px;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    min-height: 600px;
+    max-height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    display: inline-block;
+    opacity: 0.8; 
+}
+.birdpage{
+    overflow-y: scroll;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Page animal */
+.animal_hishnik{
+    margin-left: 10px;
+    width: 740px;
+    height: 600px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    display: inline-block;
+    position: absolute;
+    overflow-y: scroll;
+}
+.animal_trava{
+    display: inline-block;
+    margin-left: 800px;
+    width: 740px;
+    height: 600px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    overflow-y: scroll;
+}
+dl {
+    margin: 0;
+    padding: 24px 0 0 0;
+  }
+  
+  dt {
+    background: #B8C1C8;
+    border-bottom: 1px solid #989EA4;
+    border-top: 1px solid #717D85;
+    color: #FFF;
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 2px 0 0 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+  }
+  
+  dd {
+    font: bold 20px/45px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+    color: #FFF;
+  }
+  
+  dd + dd {
+    border-top: 1px solid #CCC
+  }
+  #hisnik_zver{
+      position: fixed;
+  }
+/* footer */
+footer{
+    position: fixed;
+    bottom: 2px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 50px;
+}
+/*стили футера*/
+.namerazrab{
+    transform: rotate(0.000001deg);
+    font-size: 14px;
+}
+/* stilizasia izobrazheniya */
+.soika{
+    widows: 640px;
+    height:480px;
+    border-color: #111111;
+    display: inline-block;
+    position:relative; 
+}
+.Soika{
+    position:relative;
+    margin: 10px;
+}
+.soikatext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none;
+}
+.Soika:hover .soikatext{
+    display:block;
+    }
+.gusi{
+    margin: 10px;
+    display: inline-block;
+    width: 640px;
+    height: 480px;
+    border-color: #111111;
+    top: 0px;
+    left: 10px;
+    position: relative;
+}
+.gusitext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none; 
+}
+.gusi:hover .gusitext{
+    display:block;
+    }
+.parot{
+    widows: 640px;
+    height:480px;
+    border-color: #111111;
+    display: inline-block;
+    position:relative; 
+}
+.parrot{
+    position:relative;
+    margin: 10px;
+}
+.parrottext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none; 
+}
+.parrot:hover .parrottext{
+    display:block;
+    }
+.lebed{
+    margin: 10px;
+    display: inline-block;
+    width: 640px;
+    height: 480px;
+    border-color: #111111;
+    top: 0px;
+    left: 10px;
+    position: relative;
+}
+.lebedtext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none;   
+}
+.lebed:hover .lebedtext{
+    display:block;
+    overflow-y: auto;
+    }
+/* maml page */
+.mamlpages{
+    overflow-y: scroll;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.Lion{
+    widows: 640px;
+    height:480px;
+    border-color: #111111;
+    display: inline-block;
+    position:relative; 
+}
+.lion{
+    position:relative;
+    margin: 10px;
+}
+.liontext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none;
+    overflow: auto;
+}
+.lion:hover .liontext{
+    display:block;
+    }
+.tiger{
+    margin: 10px;
+    display: inline-block;
+    width: 640px;
+    height: 480px;
+    border-color: #111111;
+    top: 0px;
+    left: 10px;
+    position: relative;
+}
+.tigertext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none; 
+    overflow: auto;
+}
+.tiger:hover .tigertext{
+    display:block;
+    }
+.wolv{
+    widows: 640px;
+    height:480px;
+    border-color: #111111;
+    display: inline-block;
+    position:relative; 
+}
+.wolves{
+    position:relative;
+    margin: 10px;
+}
+.wolvestext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none; 
+    overflow: auto;
+}
+.wolves:hover .wolvestext{
+    display:block;
+    }
+.fox{
+    margin: 10px;
+    display: inline-block;
+    width: 640px;
+    height: 480px;
+    border-color: #111111;
+    top: 0px;
+    left: 10px;
+    position: relative;
+}
+.foxtext{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255,255,255, 0.7);
+    padding:20px;
+    height: 240px;
+    width: 600px;
+    display:none;   
+    overflow: auto;
+}
+.fox:hover .foxtext{
+    display:block;
+    overflow-y: auto;
+    }
